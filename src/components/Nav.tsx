@@ -1,5 +1,10 @@
 export default function Nav() {
     return (
-        <h1>nav</h1>
+        <div className="nav-container shadow-sm shadow-primary min-w-screen min-h-3em bg-background p-9">
+            <div className="nav flex gap-[3em] justify-center items-center">
+                <a href="/" className="transition duration-500 active:duration-200 hover:opacity-100 font-bold opacity-50 active:text-primary">HOME</a>
+                <a href="/" className="transition duration-500 active:duration-200 hover:opacity-100 font-bold opacity-50 active:text-primary">PROFILE</a>
+            </div>
+        </div>
     )
 }
