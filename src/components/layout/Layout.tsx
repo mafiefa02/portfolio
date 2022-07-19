@@ -5,7 +5,7 @@ import GlobalStyle from "../../styles/global"
 export default function Layout(props: any) {
     return (
         <>
-            <div className="flex-col min-w-screen min-h-screen bg-background">
+            <div className="min-w-screen min-h-screen bg-background">
                 <GlobalStyle />
                 <Nav />
                 {props.children}
