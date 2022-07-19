@@ -4,9 +4,11 @@ import Footer from "../Footer"
 export default function Layout(props: any) {
     return (
         <>
-            <Nav />
-            {props.children}
-            <Footer />
+            <div className="min-w-screen min-h-screen bg-background">
+                <Nav />
+                {props.children}
+                <Footer />
+            </div>
         </>
     )
 }
