@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
         background-color: #121212;
     }
 
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255,100,94,1);
+    }
+
     ::-webkit-scrollbar-thumb {
         background-color: rgba(255,100,94, 0.5);
     }
