@@ -21,7 +21,7 @@ export default function ScrollToTopButton() {
     return (
         <>
             <div className="topToBtn fixed bottom-10 left-10" style={showTopBtn ? { display: 'flex' } : { display: 'none' }}>
-                <FaAngleUp onClick={goToTop} size={20} className={"hover:cursor-pointer dark:text-white text-primary"} />
+                <FaAngleUp onClick={goToTop} size={20} className={"hover:cursor-pointer dark:text-white dark:hover:text-primary text-primary hover:text-black"} />
             </div>
         </>
     )
