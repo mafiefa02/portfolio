@@ -12,7 +12,7 @@ export default function Layout(props: any) {
                 <Nav />
                 <Sidebar />
                 {props.children}
-                <div className="fixed right-12 bottom-3">
+                <div className="flex fixed right-5 bottom-3">
                     <Switcher />
                 </div>
                 <Footer />
