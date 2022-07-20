@@ -13,7 +13,9 @@ export default function Switcher() {
 
     return (
         <>
-            <DarkModeToggle checked={darkSide} onChange={toggleDarkMode} size={40} />
+            <div className="flex fixed right-10 bottom-10">
+                <DarkModeToggle checked={darkSide} onChange={toggleDarkMode} size={40} />
+            </div>
         </>
     )
 }
