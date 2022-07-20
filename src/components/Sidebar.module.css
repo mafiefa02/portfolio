@@ -1,0 +1,14 @@
+.sidebarIcon {
+  font-size: 30px;
+  opacity: 50%;
+}
+
+.sidebarIcon:hover {
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebarIcon {
+    font-size: 22px;
+  }
+}
