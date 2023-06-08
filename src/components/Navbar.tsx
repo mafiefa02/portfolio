@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Button from "./Button"
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons"
@@ -31,6 +31,14 @@ export default function Navbar(props: NavbarProps) {
     const toggleNavbar = () => {
         setIsNavbarOpen(!isNavbarOpen)
     }
+
+    useEffect(() => {
+        if (isNavbarOpen) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+    }, [isNavbarOpen])
 
     return (
         <>
