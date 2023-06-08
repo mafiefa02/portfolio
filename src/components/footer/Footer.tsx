@@ -37,8 +37,8 @@ export default function Footer(props: footerProps) {
         }
     ]
     return (
-        <footer className="flex flex-col gap-3 md:flex-row w-full px-12 py-6 md:justify-between items-center fixed bottom-0 bg-black -z-50">
-            <div className="flex flex-row gap-4">
+        <footer className="flex flex-col relative gap-3 md:flex-row w-full px-12 py-6 md:justify-between items-center mt-16 bg-black -z-50">
+            <div className="flex flex-row md:gap-4 gap-6">
                 {socialMedia.map((social, index) => {
                     return (
                         <>

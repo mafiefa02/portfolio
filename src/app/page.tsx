@@ -6,7 +6,20 @@ config.autoAddCss = false
 export default function Home() {
   return (
     <main>
-      <h1>Next.js + TypeScript + Tailwind CSS</h1>
+      <div className='flex flex-col items-center justify-center w-full self-center'>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+        <h1 className='text-6xl'>Hello World!</h1>
+      </div>
     </main>
   )
 }

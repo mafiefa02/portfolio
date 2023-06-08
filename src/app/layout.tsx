@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${lato.variable} font-sans`} lang="en">
-      <body className='overflow-hidden'>
+      <body className='overflow-y-scroll'>
         <Navbar />
         {children}
         <Footer />
