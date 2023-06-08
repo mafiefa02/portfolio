@@ -36,29 +36,35 @@ export default function Home() {
           <div className="max-w-[360px] mt-2"><p className="font-light text-left">currently an undergraduate physics student at <span className="font-bold"><a data-tooltip-id="itb" data-tooltip-content="A university located in Bandung, Indonesia. As in 2023, Bandung Institute of Technology or ITB is a top 3 university in Indonesia" href="https://itb.ac.id">Bandung Institute of Technology</a></span></p></div>
           <Tooltip id="itb" className="font-bold max-w-xs break-words" />
           <div className="w-full mt-6 mb-3"><p className="font-bold">Tech/Design Stacks</p></div>
-          <div className="flex flex-col gap-2 md:hidden">
-            <div className="flex flex-row gap-6 max-w-xs">
-              <Image data-tooltip-id="javascript" data-tooltip-content="Javascript" src={javascript} alt="Javascript" width={38} height={38} />
-              <Image data-tooltip-id="illustrator" data-tooltip-content="Adobe Illustrator" src={illustrator} alt="Illustrator" width={38} height={38} />
-              <Image data-tooltip-id="tailwind" data-tooltip-content="TailwindCSS" src={tailwindcss} alt="TailwindCSS" width={38} height={38} />
-              <Image data-tooltip-id="css" data-tooltip-content="CSS3" src={css} alt="CSS" width={31} height={31} />
-              <Image data-tooltip-id="typescript" data-tooltip-content="Typescript" src={typescript} alt="TypeScript" width={38} height={38} />
-              <Tooltip id="javascript" className="font-bold" />
-              <Tooltip id="illustrator" className="font-bold" />
+          <div className="flex flex-row gap-6 md:hidden max-w-xs justify-center">
+            <div className="flex flex-col gap-4 items-center">
+              <Image data-tooltip-id="tailwind" data-tooltip-content="TailwindCSS" src={tailwindcss} alt="TailwindCSS" width={38} height={38} className="h-1/2" />
               <Tooltip id="tailwind" className="font-bold" />
+              <Image data-tooltip-id="css" data-tooltip-content="CSS3" src={css} alt="CSS" width={31} height={31} />
               <Tooltip id="css" className="font-bold" />
-              <Tooltip id="typescript" className="font-bold" />
             </div>
-            <div className="flex flex-row gap-6 max-w-xs">
+            <div className="flex flex-col gap-4 items-center">
+              <Image data-tooltip-id="javascript" data-tooltip-content="Javascript" src={javascript} alt="Javascript" width={38} height={38} />
+              <Tooltip id="javascript" className="font-bold" />
+              <Image data-tooltip-id="illustrator" data-tooltip-content="Adobe Illustrator" src={illustrator} alt="Illustrator" width={38} height={38} />
+              <Tooltip id="illustrator" className="font-bold" />
+            </div>
+            <div className="flex flex-col gap-4 items-center">
+              <Image data-tooltip-id="typescript" data-tooltip-content="Typescript" src={typescript} alt="TypeScript" width={38} height={38} />
+              <Tooltip id="typescript" className="font-bold" />
               <Image data-tooltip-id="nextjs" data-tooltip-content="Next.js" src={nextjs} alt="Next.js" width={38} height={38} />
-              <Image data-tooltip-id="prisma" data-tooltip-content="Prisma" src={prisma} alt="Prisma" width={33} height={33} />
-              <Image data-tooltip-id="react" data-tooltip-content="ReactJS" src={react} alt="ReactJS" width={38} height={38} />
-              <Image data-tooltip-id="figma" data-tooltip-content="Figma" src={figma} alt="Figma" width={25} height={25} />
-              <Image data-tooltip-id="py" data-tooltip-content="Python" src={python} alt="Python" width={35} height={35} />
               <Tooltip id="nextjs" className="font-bold" />
+            </div>
+            <div className="flex flex-col gap-4 items-center">
+              <Image data-tooltip-id="prisma" data-tooltip-content="Prisma" src={prisma} alt="Prisma" width={33} height={33} />
               <Tooltip id="prisma" className="font-bold" />
+              <Image data-tooltip-id="react" data-tooltip-content="ReactJS" src={react} alt="ReactJS" width={38} height={38} />
               <Tooltip id="react" className="font-bold" />
+            </div>
+            <div className="flex flex-col gap-4 items-center">
+              <Image data-tooltip-id="figma" data-tooltip-content="Figma" src={figma} alt="Figma" width={25} height={25} />
               <Tooltip id="figma" className="font-bold" />
+              <Image data-tooltip-id="py" data-tooltip-content="Python" src={python} alt="Python" width={35} height={35} />
               <Tooltip id="py" className="font-bold" />
             </div>
           </div>
