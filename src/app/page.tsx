@@ -30,7 +30,7 @@ export default function Home() {
         <div className="hidden md:flex items-center justify-center md:h-[350px] md:min-w-[250px] md:w-[250px] lg:h-[400px] lg:w-[300px] ml-[4.5rem] border-4 border-black overflow-hidden shadow-2xl pointer-events-none">
           <Image src={profile} alt="Profile" width={400} height={400} className="object-cover" />
         </div>
-        <div className="flex flex-col justify-center min-h-[500px] h-[calc(100vh-(200px+78px+8rem))] md:min-h-[calc(100vh-(78px+8rem))] items-start gap-0 px-[4.5rem]">
+        <div className="flex flex-col justify-center min-h-[550px] h-[calc(100vh-(200px+78px+8rem))] md:min-h-[calc(100vh-(78px+8rem))] items-start gap-0 px-[4.5rem]">
           <div className="w-full"><p className="font-light text-left text-xl mb-1">Hello, I am</p></div>
           <div className="w-full"><h1 className="font-bold text-left text-4xl md:text-[2.9rem]">Afief Abdurrahman</h1></div>
           <div className="max-w-[360px] mt-2"><p className="font-light text-left">currently an undergraduate physics student at <span className="font-bold"><a data-tooltip-id="itb" data-tooltip-content="A university located in Bandung, Indonesia. As in 2023, Bandung Institute of Technology or ITB is a top 3 university in Indonesia" href="https://itb.ac.id">Bandung Institute of Technology</a></span></p></div>
