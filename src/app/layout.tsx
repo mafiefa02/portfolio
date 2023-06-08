@@ -2,6 +2,9 @@ import './globals.css'
 import { Lato } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/footer/Footer'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const lato = Lato({
   subsets: ['latin'],
