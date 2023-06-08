@@ -47,7 +47,7 @@ export default function Navbar(props: NavbarProps) {
                     <FontAwesomeIcon icon={isNavbarOpen ? faX : faBars} size="xl" color="#000000" onClick={toggleNavbar} />
                 </div>
             </nav>
-            <div className={`fixed top-[calc(0px+76px)] w-full flex-col justify-center items-center gap-12 h-full md:hidden ${isNavbarOpen ? 'flex' : 'hidden'} bg-white bg-opacity-80 backdrop-blur-sm z-50`}>
+            <div className={`fixed top-[calc(0px+76px)] w-full flex-col justify-center items-center gap-12 h-[calc(100%-76px)] md:hidden ${isNavbarOpen ? 'flex' : 'hidden'} bg-white bg-opacity-80 backdrop-blur-sm z-50`}>
                 {navbarButtons.map((button, index) => {
                     return (
                         <Button type="text" key={index} link={button.link} name={button.name} className="text-xl" />
