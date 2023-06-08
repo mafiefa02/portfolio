@@ -34,8 +34,8 @@ export default function Navbar(props: NavbarProps) {
 
     return (
         <>
-            <nav className={`sticky top-0 flex flex-row self-start w-full justify-between px-12 py-6 ${isNavbarOpen ? 'md:border-b-2 md:border-black md:shadow-lg md:bg-opacity-80 md:backdrop-blur-sm' : `border-b-2 border-black shadow-lg bg-opacity-80 backdrop-blur-sm`} mb-16 bg-white`}>
-                <p className={`font-bold text-xl`}>Afief&apos;s <span className="font-bold hidden md:contents">| </span><span className="font-light hidden md:contents">personal place</span></p>
+            <nav className={`sticky top-0 flex flex-row self-start w-full justify-between px-12 py-6 ${isNavbarOpen ? 'md:border-b-2 md:border-black md:shadow-lg md:bg-opacity-80 md:backdrop-blur-sm' : `border-b-2 border-black shadow-lg bg-opacity-80 backdrop-blur-sm`} md:mb-16 bg-white z-50`}>
+                <p className={`font-bold text-xl`}>Afief&apos;s <span className="font-bold">| </span><span className="font-light">personal place</span></p>
                 <div className="hidden md:flex flex-row gap-12">
                     {navbarButtons.map((button, index) => {
                         return (
