@@ -1,5 +1,6 @@
 import HomeAvatar from "@/components/page-home/HomeAvatar"
 import HomeHero from "@/components/page-home/HomeHero"
+import HomeEducation from "@/components/page-home/HomeEducation"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <HomeAvatar />
         <HomeHero />
       </div>
+      <HomeEducation />
     </main>
   )
 }
