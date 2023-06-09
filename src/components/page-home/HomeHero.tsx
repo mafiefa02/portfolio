@@ -29,7 +29,7 @@ export default function HomeHero() {
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-            ><h1 className="font-bold text-left text-4xl md:text-[2.9rem]">Afief Abdurrahman</h1></motion.div>
+            ><h1 className="font-bold text-left text-[2.472rem] md:text-[2.9rem]">Afief Abdurrahman</h1></motion.div>
             <motion.div className="max-w-[360px] mt-2"
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -117,12 +117,12 @@ export default function HomeHero() {
                 <Tooltip id="typescript" className="font-bold" />
                 <Tooltip id="py" className="font-bold" />
             </motion.div>
-            <motion.div className="flex flex-row gap-2 md:gap-6 w-full mt-6"
+            <motion.div className="flex flex-row justify-between md:gap-6 w-full mt-6"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2.7 }}
             >
-                <Button type="default" link="mailto:mafiefa.business@gmail.com" name="Contact Me!" className="px-6 md:px-12" />
+                <Button type="default" link="mailto:mafiefa.business@gmail.com" name="Contact Me!" className="px-12" />
                 <Button type="outline" link="google.com" name="Download CV" className="px-6 md:px-12" />
             </motion.div>
         </div>
