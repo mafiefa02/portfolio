@@ -6,6 +6,45 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 71% 83%,
+    rgba(0, 165, 255, 0.08) 0%,
+    rgba(151, 59, 255, 0.07) 58%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 71% 83%,
+    rgba(0, 165, 255, 0.08) 0%,
+    rgba(151, 59, 255, 0.07) 58%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 71% 83%,
+    rgba(0, 165, 255, 0.08) 0%,
+    rgba(151, 59, 255, 0.07) 58%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 71% 83%,
+    rgba(0, 165, 255, 0.08) 0%,
+    rgba(151, 59, 255, 0.07) 58%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 71% 83%,
+    rgba(0, 165, 255, 0.08) 0%,
+    rgba(151, 59, 255, 0.07) 58%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /* width */
