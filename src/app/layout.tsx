@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${lato.variable} font-sans`} lang="en">
-      <body className='overflow-y-scroll'>
+      <body className='overflow-hidden'>
         <Navbar />
         {children}
         <Footer />
