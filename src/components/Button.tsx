@@ -1,11 +1,14 @@
+"use client"
+
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 interface buttonProps {
     name: string,
     link: string,
     className?: string,
-    mobile?: boolean
-    type: "default" | "outline" | "text"
+    motion?: boolean,
+    type: "default" | "outline" | "text",
 }
 
 export default function Button(props: buttonProps) {
@@ -25,7 +28,9 @@ export default function Button(props: buttonProps) {
     ]
     return (
         <Link href={props.link}>
-            <button className={`${buttonClasses.find(buttonClass => buttonClass.type === props.type)?.className} ${props.className}`}>{props.name}</button>
+            <motion.button className={`${buttonClasses.find(buttonClass => buttonClass.type === props.type)?.className} ${props.className}`}
+                whileTap={{ scale: 0.9 }}
+            >{props.name}</motion.button>
         </Link>
     )
 }
