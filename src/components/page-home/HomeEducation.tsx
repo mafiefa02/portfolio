@@ -5,8 +5,8 @@ import { faCircle, faEllipsisVertical } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import cordova from "/public/images/education/smpitcordova.png"
-import granada from "/public/images/education/smaitgranada.jpg"
-import itb from "/public/images/education/itb.jpg"
+import granada from "/public/images/education/smaitgranada.png"
+import itb from "/public/images/education/itb.png"
 
 export default function HomeAbout() {
     return (
@@ -26,8 +26,8 @@ export default function HomeAbout() {
                     viewport={{ once: false, amount: "all" }}
                 />
             </div>
-            <div className="flex flex-row justify-center px-8 gap-12">
-                <div className="flex flex-col items-center justify-start">
+            <div className="flex flex-row justify-center px-8 gap-4 md:gap-8 lg:gap-12">
+                <div className="flex flex-col items-center justify-start md:pt-8">
                     <motion.span
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -43,12 +43,7 @@ export default function HomeAbout() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                     ><FontAwesomeIcon icon={faEllipsisVertical} color="#141414" /></motion.span>
-                    <motion.span className="md:inline-block hidden"
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeInOut" }}
-                    ><FontAwesomeIcon icon={faEllipsisVertical} color="#141414" /></motion.span>
-                    <motion.span className="md:inline-block hidden"
+                    <motion.span
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -83,12 +78,7 @@ export default function HomeAbout() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                     ><FontAwesomeIcon icon={faEllipsisVertical} color="#141414" /></motion.span>
-                    <motion.span className="md:inline-block hidden"
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeInOut" }}
-                    ><FontAwesomeIcon icon={faEllipsisVertical} color="#141414" /></motion.span>
-                    <motion.span className="md:inline-block hidden"
+                    <motion.span
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -119,9 +109,9 @@ export default function HomeAbout() {
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                     ><FontAwesomeIcon icon={faCircle} color="#141414" /></motion.span>
                 </div>
-                <div className="flex flex-col gap-11">
-                    <div className="flex flex-row items-center gap-8">
-                        <motion.div className="md:flex hidden border-[3px] border-black shadow-lg w-[250px] h-[160px] overflow-hidden"
+                <div className="flex flex-col gap-11 w-max items-start pl-8 md:pl-12 lg:pl-8">
+                    <div className="flex flex-row items-center justify-center gap-12">
+                        <motion.div className="md:flex hidden w-[130px] h-[130px] overflow-hidden"
                             initial={{ scale: 0, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -133,9 +123,9 @@ export default function HomeAbout() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <p className="font-bold text-xl lg:text-3xl">Cordova Islamic Junior Highschool</p>
+                            <p className="font-bold text-xl lg:text-3xl mb-2">Cordova Islamic Junior Highschool</p>
                             <div className="flex flex-col w-max">
-                                <p className="font-light text-md md:text-lg">Samarinda, Kalimantan Timur, Indonesia</p>
+                                <p className="font-light text-md md:text-lg lg:text-xl">Samarinda, Kalimantan Timur, Indonesia</p>
                                 <div className="flex flex-row justify-between items-center">
                                     <p className="font-bold">Natural Science Major</p>
                                     <hr className="w-[8px] md:w-[40px] h-[2px] bg-black" style={{ color: "#141414" }}></hr>
@@ -144,8 +134,8 @@ export default function HomeAbout() {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="flex flex-row items-center gap-8">
-                        <motion.div className="md:flex hidden border-[3px] border-black shadow-lg w-[250px] h-[160px] overflow-hidden"
+                    <div className="flex flex-row items-center justify-center gap-12">
+                        <motion.div className="md:flex hidden w-[130px] h-[130px] overflow-hidden"
                             initial={{ scale: 0, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -157,9 +147,9 @@ export default function HomeAbout() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <p className="font-bold text-xl lg:text-3xl">Granada Islamic Highschool</p>
+                            <p className="font-bold text-xl lg:text-3xl mb-2">Granada Islamic Highschool</p>
                             <div className="flex flex-col w-max">
-                                <p className="font-light text-md md:text-lg">Samarinda, Kalimantan Timur, Indonesia</p>
+                                <p className="font-light text-md md:text-lg lg:text-xl">Samarinda, Kalimantan Timur, Indonesia</p>
                                 <div className="flex flex-row justify-between items-center">
                                     <p className="font-bold">Natural Science Major</p>
                                     <hr className="w-[8px] md:w-[40px] h-[2px] bg-black" style={{ color: "#141414" }}></hr>
@@ -168,8 +158,8 @@ export default function HomeAbout() {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="flex flex-row items-center gap-8">
-                        <motion.div className="md:flex hidden border-[3px] border-black shadow-lg w-[250px] h-[160px] overflow-hidden"
+                    <div className="flex flex-row justify-center items-center gap-12">
+                        <motion.div className="md:flex hidden w-[130px] h-[130px] overflow-hidden"
                             initial={{ scale: 0, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -181,9 +171,9 @@ export default function HomeAbout() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <p className="font-bold text-xl lg:text-3xl">Bandung Institute of Technology</p>
+                            <p className="font-bold text-xl lg:text-3xl mb-2">Bandung Institute of Technology</p>
                             <div className="flex flex-col w-max">
-                                <p className="font-light text-md md:text-lg">Bandung, Jawa Barat, Indonesia</p>
+                                <p className="font-light text-md md:text-lg lg:text-xl">Bandung, Jawa Barat, Indonesia</p>
                                 <div className="flex flex-row justify-between items-center">
                                     <p className="font-bold">Physics Major</p>
                                     <hr className="w-[15px] md:w-[30px] lg:w-[35px] h-[2px] bg-black" style={{ color: "#141414" }}></hr>
