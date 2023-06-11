@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { faCircle, faEllipsisVertical } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Image from "next/image"
 import cordova from "/public/images/education/smpitcordova.png"
 import granada from "/public/images/education/smaitgranada.png"
 import itb from "/public/images/education/itb.png"
