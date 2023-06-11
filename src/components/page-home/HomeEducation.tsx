@@ -8,9 +8,9 @@ import cordova from "/public/images/education/smpitcordova.png"
 import granada from "/public/images/education/smaitgranada.png"
 import itb from "/public/images/education/itb.png"
 
-export default function HomeAbout() {
+export default function HomeEducation() {
     return (
-        <>
+        <section className="education">
             <div className="flex flex-row gap-8 w-full items-center justify-center mt-2 md:mt-16 px-8 mb-16">
                 <div className="w-max whitespace-nowrap">
                     <motion.p className="text-center text-4xl font-bold"
@@ -184,6 +184,6 @@ export default function HomeAbout() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
