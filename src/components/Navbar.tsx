@@ -15,7 +15,7 @@ export default function Navbar(props: NavbarProps) {
         },
         {
             name: "Education",
-            link: "/education"
+            link: "/#education"
         },
         {
             name: "Experiences",

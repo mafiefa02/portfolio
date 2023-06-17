@@ -11,7 +11,7 @@ import Education from "./section-education/Education"
 
 export default function HomeEducation() {
     return (
-        <section className="education mt-2 md:mt-28 mb-32">
+        <section id="education" className="education mt-2 md:mt-28 mb-32">
             <div className="flex flex-row gap-8 w-full items-center justify-center px-8 mb-16">
                 <div className="w-max whitespace-nowrap">
                     <motion.p className="text-center text-4xl md:text-5xl font-bold"
